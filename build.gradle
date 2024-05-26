@@ -1,0 +1,20 @@
+plugins {
+    id("scala")
+}
+
+group = "com.hamza"
+version = "1.0-SNAPSHOT"
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.scala-lang:scala-library:2.13.6'
+    testImplementation 'junit:junit:4.13.2'
+    testImplementation 'org.scalatest:scalatest_2.13:3.2.9'
+}
+
+tasks.test {
+    useJUnitPlatform()
+}
